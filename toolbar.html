@@ -8,56 +8,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="toolbar-container">
         <div id="item-a" class="item">
+            Toolbar
+        </div>
+        <!-- DELETE GRID -->
+        <div id="item-b" class="item">
             Build Your Grid
         </div>
-        <div id="item-b" class="item">
-            Blocks(title)
-        </div>
+        <!-- DECREMENT COL -->
         <div id="item-c" class="item">
-            -
+            <i class="fa-solid fa-square-minus"></i>
         </div>
+        <!-- INCREMENT COL -->
         <div id="item-d" class="item">
-            +
+            <i class="fa-solid fa-square-plus"></i>
         </div>
+        <!-- COL ICON -->
         <div id="item-e" class="item">
-            Col
+            <i class="fa-solid fa-grip-vertical"></i>
         </div>
+        <!-- ROW ICON -->
         <div id="item-f" class="item">
-            Row
+            <i class="fa-solid fa-grip"></i>
         </div>
+        <!-- TITLE OF COLOR SECTION -->
         <div id="item-g" class="item">
-            Pick Your Shade
+            Fill it in!
         </div>
+        <!-- COLOR CELL -->
         <div id="item-h" class="item">
-            draw
+            <i class="fa-solid fa-paintbrush"></i>
         </div>
+        <!-- ERASE COLOR OF CELL -->
         <div id="item-i" class="item">
-            erase
+            <i class="fa-solid fa-eraser"></i>
         </div>
+        <!-- CHOOSE COLOR -->
         <div id="item-j" class="item">
-            choice
+            <input type="color" id="colorPicker" name="colorPicker" value="#7bd89f">
+            <button id="getColorButton">Get Color</button>
         </div>
+        <!-- FILL REST -->
         <div id="item-k" class="item">
-            Fill in the Rest!
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+            <img src="images/fill-rest.png">
         </div>
+        <!-- FILL ALL -->
         <div id="item-l" class="item">
-            Fill ALL!
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-circle" style="color: #7bd89f;"></i>
         </div>
+        <!-- DELETE ALL ROWS -->
         <div id="item-p" class="item">
-            Delete Grid
+            <i class="fa-solid fa-trash" style="color:#ff2600"></i>
+            <i class="fa-solid fa-table-cells"></i>
         </div>
+        <!-- ERASE ALL COLOR -->
         <div id="item-m" class="item">
-            Clear All Colors
+            <i class="fa-solid fa-droplet-slash" style="color:#ff2600"></i>
         </div>
+        <!-- DECREMENT ROW -->
         <div id="item-n" class="item">
-            -
+            <i class="fa-solid fa-square-minus"></i>
         </div>
+        <!-- INCREMENT ROW -->
         <div id="item-o" class="item">
-            +
+            <i class="fa-solid fa-square-plus"></i>
         </div>
     </div>
 </body>
