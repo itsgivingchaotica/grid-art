@@ -141,6 +141,15 @@ sftp-config.json
 
 ### Code ###
 # Visual Studio Code - https://code.visualstudio.com/
-.settings
-.vscode
-.idea
+.vscode/
+.vscodeignore
+
+# User-specific VS Code settings
+.vscode/settings.json
+.vscode/keybindings.json
+
+# Workspace-specific VS Code settings
+.vscode/*.code-workspace
+
+# Extensions
+.vscode/extensions/
