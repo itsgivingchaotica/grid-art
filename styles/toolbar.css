@@ -1,3 +1,91 @@
 #toolbar-container{
     font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto; 
+    grid-template-areas: 
+        "header header header header"
+        "decrement-col col-block col-block increment-col"
+        "decrement-row row-block row-block increment-row"
+        "delete-grid delete-grid delete-grid delete-grid"
+        "color-pick color-pick color-pick color-pick"
+        "draw draw erase erase"
+        "choice choice choice choice"
+        "fill-rest fill-rest fill-rest fill-rest"
+        "fill-all clear-all clear-all clear-all-colors";
+
+    }
+
+#toolbar-container .item{
+    border: 2px solid black;
+    margin: 1px;
+    padding: 40px;
 }
+
+#item-a {
+    grid-area: header;
+}
+
+#item-b {
+    grid-area: delete-grid;
+}
+
+#item-c {
+    grid-area: decrement-col;
+    border: 3px solid black;
+}
+
+#item-d {
+    grid-area: increment-col;
+}
+
+#item-e{
+    grid-area: col-block;
+}
+
+#item-f{
+    grid-area: row-block;
+}
+
+#item-g{
+    grid-area: color-pick;
+}
+
+#item-h{
+    grid-area: draw;
+}
+
+#item-i {
+    grid-area: erase;
+}
+
+#item-j {
+    grid-area: choice;
+}
+
+#item-k {
+    grid-area: fill-rest;
+}
+
+#item-l{
+    grid-area: fill-all;
+}
+
+#item-m {
+    grid-area: clear-all-colors;
+}
+
+#item-n {
+    grid-area: decrement-row;
+    width: 10px;
+}
+
+#item-o {
+    grid-area: increment-row;
+    width: 10px;
+}
+
+#item-p {
+    grid-area: clear-all;
+}
+
