@@ -17,7 +17,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* backdrop-filter: blur(10px); */
 }
 
 #title {
@@ -52,12 +51,33 @@ p {
     font-weight: 700;
     color: white;
     text-shadow: 0 0 5px #fff, 0 0 20px black, 0 0 20px black;
+    margin: 10px;
+}
+
+.main-container .fa-rectangle-xmark{
+    margin-left: 250px;
+    font-size: 30px;
+}
+
+.main-container .fa-rectangle-xmark:hover{
+    color: red !important;
+}
+
+.main-container .fa-bars {
+    margin-left: 250px;
+    font-size: 30px;
+}
+
+.main-container .fa-bars:hover {
+    color: green !important;
 }
 
 #grid-container {
-    flex-basis: 50%;
+    flex-basis: 75%;
     flex-grow: 1;
     text-align: center;
+    margin: 10px;
+    max-height: 600px;
 }
 
 #toolbar {
@@ -76,6 +96,8 @@ p {
     flex-wrap: wrap;
     margin-bottom: 20px;
     margin-top: -100px;
+    margin: 10px;
+    transform: translateY(-70px);
 }
 
 @media (max-width: 950px) {
