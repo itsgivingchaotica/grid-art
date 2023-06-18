@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles/toolbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,75 +15,78 @@
 </head>
 <body>
     <div id="toolbar-container">
-        <div id="item-a" class="item">
+        <div id="toolbar-title" class="item">
             Toolbar
         </div>
         <!-- DELETE GRID -->
-        <div id="item-b" class="item">
+        <div id="build-title" class="item">
             Build Your Grid
         </div>
         <!-- DECREMENT COL -->
-        <div id="item-c" class="item">
+        <div id="decrement-column-btn" class="item">
             <i class="fa-solid fa-square-minus"></i>
         </div>
         <!-- INCREMENT COL -->
-        <div id="item-d" class="item">
+        <div id="increment-column-btn" class="item">
             <i class="fa-solid fa-square-plus"></i>
         </div>
         <!-- COL ICON -->
-        <div id="item-e" class="item">
+        <div id="column-icon" class="item">
             <i class="fa-solid fa-grip-vertical"></i>
+            <i class="fa-solid fa-arrow-right"></i>
         </div>
         <!-- ROW ICON -->
-        <div id="item-f" class="item">
+        <div id="row-icon" class="item">
             <i class="fa-solid fa-grip"></i>
+            <i class="fa-solid fa-arrow-down"></i>
         </div>
         <!-- TITLE OF COLOR SECTION -->
-        <div id="item-g" class="item">
+        <div id="color-pick" class="item">
             Fill it in!
         </div>
         <!-- COLOR CELL -->
-        <div id="item-h" class="item">
+        <div id="draw-btn" class="item">
             <i class="fa-solid fa-paintbrush"></i>
         </div>
         <!-- ERASE COLOR OF CELL -->
-        <div id="item-i" class="item">
+        <div id="erase-btn" class="item">
             <i class="fa-solid fa-eraser"></i>
         </div>
         <!-- CHOOSE COLOR -->
-        <div id="item-j" class="item">
+        <div id="color-section" class="item">
+            <button id="get-color-btn">Get Color</button>
             <input type="color" id="colorPicker" name="colorPicker" value="#7bd89f">
-            <button id="getColorButton">Get Color</button>
         </div>
         <!-- FILL REST -->
-        <div id="item-k" class="item">
+        <div id="fill-rest-btn" class="item">
             <i class="fa-solid fa-circle-half-stroke"></i>
             <i class="fa-solid fa-arrow-right"></i>
             <img src="images/fill-rest.png">
         </div>
         <!-- FILL ALL -->
-        <div id="item-l" class="item">
+        <div id="fill-all-btn" class="item">
             <i class="fa-solid fa-circle-half-stroke"></i>
             <i class="fa-solid fa-arrow-right"></i>
             <i class="fa-solid fa-circle" style="color: #7bd89f;"></i>
         </div>
         <!-- DELETE ALL ROWS -->
-        <div id="item-p" class="item">
+        <div id="delete-grid-btn" class="item">
             <i class="fa-solid fa-trash" style="color:#ff2600"></i>
             <i class="fa-solid fa-table-cells"></i>
         </div>
         <!-- ERASE ALL COLOR -->
-        <div id="item-m" class="item">
+        <div id="clear-colors-btn" class="item">
             <i class="fa-solid fa-droplet-slash" style="color:#ff2600"></i>
         </div>
         <!-- DECREMENT ROW -->
-        <div id="item-n" class="item">
+        <div id="decrement-row-btn" class="item">
             <i class="fa-solid fa-square-minus"></i>
         </div>
         <!-- INCREMENT ROW -->
-        <div id="item-o" class="item">
+        <div id="increment-row-btn" class="item">
             <i class="fa-solid fa-square-plus"></i>
         </div>
     </div>
+    <script src="scripts/toolbar.js"></script>
 </body>
 </html>

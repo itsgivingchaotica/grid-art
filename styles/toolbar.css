@@ -15,7 +15,6 @@
         "fill-all fill-all fill-all fill-all"
         "clear-all clear-all clear-all clear-all-colors";
         width: 80%;
-
     }
 
 #toolbar-container .item{
@@ -26,7 +25,7 @@
 }
 
 
-#item-a {
+#toolbar-title {
     grid-area: header;
     border:none !important;
     border-bottom: 2px solid rgb(255, 255, 255) !important;
@@ -34,60 +33,62 @@
             cursive;
 }
 
-#item-b {
+#build-title {
     grid-area: build-grid;
     border: none !important;
     font-family: 'Gloria Hallelujah',
             cursive;
 }
 
-#item-c {
+#decrement-column-btn {
     grid-area: decrement-col;
     color: red;
     transition: box-shadow 0.3s ease;
 }
 
-#item-c:hover{
+#decrement-column-btn:hover{
     box-shadow: 0 0 10px 5px white;
 }
 
-#item-c:active{
+#decrement-column-btn:active{
     color: white !important;
     background-color: red;
     box-shadow: 0 0 10px 5px #ffcc00;
 }
 
-#item-d {
+#increment-column-btn {
     grid-area: increment-col;
     color: green;
     transition: box-shadow 0.3s ease;
 }
 
-#item-d:hover{
+#increment-column-btn:hover{
     box-shadow: 0 0 10px 5px white;
 }
 
-#item-d:active{
+#increment-column-btn:active{
     color: white !important;
     background-color: green;
     box-shadow: 0 0 10px 5px #ffcc00;
 }
 
-#item-e{
+#column-icon{
     grid-area: col-block;
     color: black;
     border: none !important;
     transition: box-shadow 0.3s ease;
+    text-shadow: 0 0 12px #fff, 0 0 12px white, 0 0 20px white;
 }
 
-#item-f{
+#row-icon{
     grid-area: row-block;
     color: black;
     border: none !important;
     transition: box-shadow 0.3s ease;
+    text-shadow: 0 0 12px #fff, 0 0 12px white, 0 0 20px white;
 }
 
-#item-g{
+#color-pick{
     grid-area: color-pick;
     border: none !important;
     font-family: 'Gloria Hallelujah',
@@ -95,174 +96,183 @@
     padding: 1px !important;
 }
 
-#item-h{
+#draw-btn{
     grid-area: draw;
     color:black;
 }
 
-#item-h:active {
+#draw-btn:active {
     grid-area: draw;
     box-shadow: 0 0 10px 5px #ffcc00 !important;
     background-color: green;
     text-shadow: 0 0 12px #fff, 0 0 12px white, 0 0 20px white;
 }
 
-#item-h:hover {
+#draw-btn:hover {
     color: white;
     box-shadow: 0 0 10px 5px white;
 }
 
-#item-i {
+#erase-btn {
     grid-area: erase;
     color: black;
 }
 
-#item-i:active {
+#erase-btn:active {
     grid-area: erase;
     box-shadow: 0 0 10px 5px #ffcc00 !important;
     background-color: red;
     /* cursor: url("images/eraser-solid.avif"); */
 }
 
-#item-i:hover{
+#erase-btn:hover{
     color: white ;
     box-shadow: 0 0 10px 5px white;
 }
 
-#item-j {
-    grid-area: choice;
-    border: none !important;
-}
-
-#item-j #colorPicker {
-    width: 100%;
-    height: 10vh;
-}
-
-#item-j button{
-    font-family: 'Gloria Hallelujah',
-            cursive;
-    transition: box-shadow 0.3s ease;
-    margin-top: 20px;
-}
-
-#item-j button:hover {
-    box-shadow: 0 0 10px 5px white;
-}
-
-#item-j button:active {
-    background-color: green;
-    box-shadow: 0 0 10px 5px #ffcc00;
-}
-
-#item-k {
-    grid-area: fill-rest;
-    transition: box-shadow 0.3s ease;
-}
-
-#item-k:active {
-    box-shadow: 0 0 10px 5px #ffcc00 !important;
-    background-color: green;
-}
-
-#item-k:hover {
-    color: white;
-    box-shadow: 0 0 10px 5px white;
-}
-
-#item-l{
-    grid-area: fill-all;
-    transition: box-shadow 0.3s ease;
-}
-
-#item-l:active {
-    box-shadow: 0 0 10px 5px #ffcc00 !important;
-    background-color: green;
-}
-
-#item-l:hover {
-    color: white;
-    box-shadow: 0 0 10px 5px white;
-}
-
-#item-m {
-    grid-area: clear-all-colors;
-    border: none !important;
-    transition: box-shadow 0.3s ease;
-    text-shadow: 0 0 5px #fff, 0 0 8px white, 0 0 20px white;
-}
-
-#item-m i:hover {
-    text-shadow: 0 0 12px #fff, 0 0 12px white, 0 0 20px white;
-}
-
-#item-m i:active {
-    text-shadow: 0 0 12px #ffcc00, 0 0 12px #ffcc00, 0 0 20px #ffcc00;
-}
-
-#item-n {
+#decrement-row-btn {
     grid-area: decrement-row;
     width: 40px;
     color: red;
     transition: box-shadow 0.3s ease;
 }
 
-#item-n:hover {
+#decrement-row-btn:hover {
     box-shadow: 0 0 10px 5px white;
 }
 
-#item-n:active {
+#decrement-row-btn:active {
     color: white !important;
     background-color: red;
     box-shadow: 0 0 10px 5px #ffcc00;
 }
 
-#item-o {
+#increment-row-btn {
     grid-area: increment-row;
     width: 40px;
     color: green;
     transition: box-shadow 0.3s ease;
 }
 
-#item-o:hover {
+#increment-row-btn:hover {
     box-shadow: 0 0 10px 5px white;
 }
 
-#item-o:active {
+#increment-row-btn:active {
     color: white !important;
     background-color: green;
     box-shadow: 0 0 10px 5px #ffcc00;
 }
 
-#item-p {
-    grid-area: clear-all;
+#color-section {
+    grid-area: choice;
+    border: none !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#item-p .fa-trash{
-text-shadow: 0 0 5px #fff, 0 0 8px white, 0 0 20px white;
+#color-section #colorPicker {
+    width: 100%;
+    height: 10vh;
 }
 
-#item-p:hover {
+#get-color-btn {
+    font-family: 'Gloria Hallelujah',
+        cursive;
+    transition: box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+#color-section button:hover {
     box-shadow: 0 0 10px 5px white;
 }
 
-
-#item-p:active {
-    color: white !important;
-    background-color: red;
+#color-section button:active {
+    background-color: green;
     box-shadow: 0 0 10px 5px #ffcc00;
 }
 
-#item-k img{
+#fill-rest-btn {
+    grid-area: fill-rest;
+    transition: box-shadow 0.3s ease;
+}
+
+#fill-rest-btn img {
     width: 25px;
     height: auto;
     transform: translateY(3px);
-    margin-left: 10px;
 }
 
-#item-k i {
+#fill-rest-btn i {
     width: 6%;
     height: auto;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+
+#fill-rest-btn:active {
+    box-shadow: 0 0 10px 5px #ffcc00 !important;
+    background-color: green;
+}
+
+#fill-rest-btn:hover {
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+#fill-all-btn {
+    grid-area: fill-all;
+    transition: box-shadow 0.3s ease;
+}
+
+#fill-all-btn .fa-circle{
+    margin-left: 5px;
+}
+
+#fill-all-btn:active {
+    box-shadow: 0 0 10px 5px #ffcc00 !important;
+    background-color: green;
+}
+
+#fill-all-btn .fa-arrow-right{
+    margin: 10px;
+}
+
+#fill-all-btn:hover {
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+#clear-colors-btn {
+    grid-area: clear-all-colors;
+    border: none !important;
+    transition: box-shadow 0.3s ease;
+    text-shadow: 0 0 5px #fff, 0 0 8px white, 0 0 20px white;
+}
+
+#clear-colors-btn i:hover {
+    text-shadow: 0 0 12px #fff, 0 0 12px white, 0 0 20px white;
+}
+
+#clear-colors-btn i:active {
+    text-shadow: 0 0 12px #ffcc00, 0 0 12px #ffcc00, 0 0 20px #ffcc00;
+}
+
+#delete-grid-btn {
+    grid-area: clear-all;
+}
+
+#delete-grid-btn .fa-trash{
+text-shadow: 0 0 5px #fff, 0 0 8px white, 0 0 20px white;
+}
+
+#delete-grid-btn:hover {
+    box-shadow: 0 0 10px 5px white;
+}
+
+#delete-grid-btn:active {
+    color: white !important;
+    background-color: red;
+    box-shadow: 0 0 10px 5px #ffcc00;
 }
 
