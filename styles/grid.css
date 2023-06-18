@@ -2,11 +2,10 @@
     display: grid;
     justify-content: start;
 }
-
+/* grid cell template to reference in scripts*/
 .grid-cell{
     color: black;
     border-style: solid;
     border-color: black;
     box-sizing: border-box;
-    /* Include border width in total width */
 }

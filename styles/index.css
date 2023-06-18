@@ -73,7 +73,7 @@ p {
 }
 
 #grid-container {
-    flex-basis: 50%;
+    flex-basis: 75%;
     flex-grow: 1;
     text-align: center;
     margin: 10px;

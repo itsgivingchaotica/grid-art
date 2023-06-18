@@ -12,13 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('fa-bars');
             menu.classList.add('fa-xmark');
             menu.className = 'fa-regular fa-rectangle-xmark';
-            mainText.forEach(function(container) {
-                mainText.forEach(function(p,index){
-                    var pElement = document.createElement('p');
-                    pElement.textContent = pContent[index];
-                    container.appendChild(pElement);
-                });
-            });
+            mainText.forEach(function(p, index) {
+        p.textContent = pContent[index];
+      });
             mainTextContainer.style.flexBasis = "25%";
             mainTextContainer.style.flexGrow = "1";
             gridContainer.style.flexBasis = "50%";
@@ -32,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('fa-rectangle-xmark');
             menu.classList.add('fa-bars');
             menu.className = 'fas fa-bars';
-            mainText.forEach(function(container) {
-        container.innerHTML = '';
+            mainText.forEach(function(p) {
+        p.textContent = '';
       });
       mainTextContainer.style.flexBasis = "0%";
       mainTextContainer.style.flexGrow = "0";
       gridContainer.style.flexBasis = "75%";
-      gridContainer.style.flexGrow = "2";
+      gridContainer.style.flexGrow = "1";
      // Set flexBasis to o% to make room for more grid 
         }
         isHidden = !isHidden;
