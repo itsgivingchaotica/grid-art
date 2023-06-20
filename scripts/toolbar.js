@@ -152,7 +152,7 @@
   else {
     let cell = e.target;
     if (cell.classList[0] == "grid-cell") {
-      cell.style.backgroundColor = "";
+      cell.style.backgroundColor = "white";
     }
   }
 });
@@ -166,8 +166,8 @@
         }
         else {
             let cell = e.target;
-    if (cell.classList[0] == "grid-cell") {
-      cell.style.backgroundColor = "";
+        if (cell.classList[0] == "grid-cell") {
+        cell.style.backgroundColor = "white";
     }
         }
         }
@@ -178,7 +178,7 @@
         let gridNodes = document.querySelectorAll(".grid-cell");
         let cells = [...gridNodes];
         for (let i = 0; i < cells.length; i++){
-            if (cells[i].style.backgroundColor===""){
+            if (cells[i].style.backgroundColor=="white" || cells[i].style.backgroundColor==""){
                 cells[i].style.backgroundColor = selectedColor;
             }
         }
@@ -196,7 +196,7 @@
         let gridNodes = document.querySelectorAll(".grid-cell");
         let cells = [...gridNodes];
         for (let i=0; i < cells.length; i++){
-            cells[i].style.backgroundColor = "";
+            cells[i].style.backgroundColor = "white";
         }
     })
 
